@@ -2,7 +2,7 @@
   hosts: db 
   become: yes
   vars:
-    login_host: db.daws78s.online
+    login_host: db.hemanth78s.online
   tasks:
   - name: Install MySql server
     ansible.builtin.dnf:
