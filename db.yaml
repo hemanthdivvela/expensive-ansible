@@ -33,7 +33,7 @@
       login_user: root
       login_password: "{{ mysql_root_password }}"
       login_host: "{{ login_host }}"
-      filter: version
+      filter: Version
     ignore_errors: yes
     register: mysql_connection_output
 
