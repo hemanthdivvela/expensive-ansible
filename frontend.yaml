@@ -19,5 +19,10 @@
 
   - name: delete defult files
     ansible.builtin.file:
-      path: /usr/share/nginx/html/*
+      path: /usr/share/nginx/html/
       state: absent
+
+  - name: create html
+    ansible.builtin.file:
+      path: /usr/share/nginx/html/
+      state: directory
